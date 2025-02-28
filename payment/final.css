@@ -1,0 +1,328 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    margin: 100px 0 5px;
+    font-size: 2.5rem;
+}
+
+main{
+    margin: 0px 200px;
+    background-color: antiquewhite;
+    padding: 100px;
+    text-align: center;
+}
+
+.submain{
+    margin: 20px 100px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+}
+.flex div{
+    margin-bottom: 20px;
+}
+input{
+    display: block;
+    height: 40px;
+    width: 250px;
+    border: 1px solid;
+    font-size: 1.5rem;
+
+}
+textarea{
+    display: block;
+    height: 50px;
+    width: 250px;
+    border: 1px solid;
+    font-size: 1.25rem;
+
+}
+label{
+    /* text-align: left; */
+    font-size: 2rem;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    /* height: 25px; */
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: #2874F0;
+}
+
+.payment_options{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0 100px;
+}
+
+.payment_methods >div{
+display: flex;
+}
+
+.payment_methods{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.payment_methods >div >input{
+    width: 20px;
+
+}
+
+.expairy{
+    display: flex;
+    margin: 20px;
+}
+
+.card_payment{
+    border: 1px solid;
+    width: fit-content;
+    margin: 20px;
+}
+
+.card_payment h3{
+    font-size: 2rem;
+    border-bottom: 1px solid;
+}
+
+.cardnumber{
+    width: 300px;
+    display: grid;
+    align-self: center;
+    margin: 20px 20px 40px;
+    font-size: 1.2rem;
+
+}
+
+.expairyyear{
+    width: 80px;
+    font-size: 1rem;
+    margin: 0 20px;
+}
+
+#month{
+    width: 200px;
+    font-size: 1.25rem;
+}
+
+.cvv{
+    margin: 40px 20px;
+    width: 50px;
+    font-size: 1.2rem;
+}
+
+.final button{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.conforming_order{
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+
+.gobackbtn button{
+    background-color: rgba(39, 35, 35, 0.306);
+    color: white;
+    padding: 5px;
+
+}
+
+.gobackbtn button:hover{
+    background-color:#2874F0
+}
+
+
+.active::after {
+    background-color: #2874F0 !important;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(82, 80, 80);
+}
+
+.no-1{
+    display: none;
+}
+/* 
+.one p{
+    display: none;
+} */
+
+ul li .one .tick {
+    display: block;
+}
+.one{
+    background-color: #2874F0;
+}
+
+.payment_title,.oredr_conformation,.pay,.final,.message{
+    display: none;
+}
+
+
+@media(max-width:1520px){
+    label{
+        font-size: 1.15rem;
+    }
+    input{
+        width: 200px;
+        height: 25px;
+    }
+    textarea{
+        width: 200px;
+        height: 50px;
+    }
+    .submain{
+        padding: 10px;
+        margin: 20px 50px;
+    }
+    button{
+        padding: 8px;
+        font-size: 1rem;
+    }
+    .payment_options{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .payment_methods >div{
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    h3{
+        font-size: 1.3rem;
+    }
+    .cardnumber{
+        width: 200px;
+        font-size: 1.2rem;
+    }
+    #month{
+        width: 100px;
+        font-size: 1rem;
+    }
+    .cvv{
+        width: 40px;
+        font-size: 1rem;
+    }
+
+    main{
+        margin: 0px 100px;
+        padding: 50px;
+        /* text-align: center; */
+    }
+
+    .conforming_order{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .final button{
+        padding: 5px;
+        margin-left: 10px;
+    }
+    
+    .conforming_order>div{
+        margin-bottom: 20px;
+    }
+    .subtitle{
+        font-size: 1.5rem;
+    }
+    label {
+        font-size: 1.75rem;
+    }
+
+    
+
+}
+
+@media(max-width:860px){
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .submain{
+        padding: 30px 0;
+        margin: 20px 0 ;
+    }
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+        height: 50px;
+    }
+    .card_payment{
+        display: none;
+    }
+    .subtitle {
+        margin-top: 50px;
+    }
+    label {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:620px){
+    main{
+        padding: 0;
+        margin: 0;
+    }
+    .submain{
+        border-radius: 0;
+    }
+    label {
+        font-size: 1.25rem;
+    }
+}
+
+.cartbtn{
+    /* display: flex; */
+    text-decoration: none;
+    /* margin: 10px; */
+}
+.cartbtn button{
+    padding: 5px 10px;
+}
+.cartbtn button:hover{
+    background-color: black;
+    color: white;
+}
+
+.error{
+    color: red;
+}
+.xyz{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.message h1{
+    color: rgb(12, 209, 12);
+}

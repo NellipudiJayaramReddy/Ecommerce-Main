@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/bce308ebcd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="name">
+        <h1>ECOMMERCE</h1>
+      </div>
+      <div class="cart">
+        <a href="cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </header>
+
+    <div class="search">
+      <input type="text" placeholder="Search..." class="searchbar" />
+      <div class="filteritems">
+        <i class="fa-solid fa-filter"></i>
+        <div>
+          <select class="filteroptions">
+            <option value="men's clothing">Mens</option>
+            <option value="electronics">Electronics</option>
+            <option value="jewelery">Jewelery</option>
+            <option value="women's clothing">Women</option>
+          </select>
+        </div>
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+
+    <div class="shopping_items">
+      <div class="item">
+        <img alt="" class="item_image" />
+        <h3 class="title"></h3>
+        <p class="description"></p>
+        <h4 class="price"></h4>
+        <button type="button" class="add_to_cart_button"></button>
+      </div>
+    </div>
+    <div class="pagination-container">
+      <div>
+        <button id="prevPage"><<</button>
+        <span id="pageNumbers"></span>
+        <button id="nextPage">>></button>
+      </div>
+
+      <label for="itemsPerPageDropdown">Items Per Page:</label>
+      <select id="itemsPerPageDropdown">
+        <option value="3">3</option>
+        <option value="4" selected>4</option>
+        <option value="7">7</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

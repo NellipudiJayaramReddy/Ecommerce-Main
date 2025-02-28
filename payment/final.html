@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="../progressbar.css" />
+    <link rel="stylesheet" href="final.css" />
+    <script
+      src="https://kit.fontawesome.com/bce308ebcd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="xyz">
+        <a href="../index.html" class="cartbtn">
+          <button><i class="fa-solid fa-house"></i>Home</button>
+        </a>
+        <a href="../cart/cart.html" class="cartbtn">
+          <button><i class="fa-solid fa-backward-step"></i> Cart</button>
+        </a>
+      </div>
+
+      <div class="progress_bar">
+        <ul>
+          <li>
+            <div class="progress one">
+              <p class="numbers no-1">1</p>
+              <i class="fa-solid fa-check tick tick-1"></i>
+            </div>
+            <p class="text">Added to Cart</p>
+          </li>
+          <li>
+            <div class="progress two">
+              <p class="numbers no-2">2</p>
+              <i class="fa-solid fa-check tick tick-2"></i>
+            </div>
+            <p class="text">Order Address</p>
+          </li>
+          <li>
+            <div class="progress three">
+              <p class="numbers no-3">3</p>
+              <i class="fa-solid fa-check tick tick-3"></i>
+            </div>
+            <p class="text">Payment Details</p>
+          </li>
+          <li>
+            <div class="progress four">
+              <p class="numbers no-4">4</p>
+              <i class="fa-solid fa-check tick tick-4"></i>
+            </div>
+            <p class="text">Order Sucessful</p>
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="adress_title subtitle">Adress Details</h2>
+      <div class="ardress_details submain">
+        <div class="name flex">
+          <div>
+            <label for="firstname">First Name: </label>
+            <input type="text" id="firstname" required />
+          </div>
+          <div>
+            <label for="lastname">Last Name: </label>
+            <input type="text" id="lastname" required />
+          </div>
+        </div>
+        <div class="number flex">
+          <div>
+            <label for="phonenumber">Mobile.No: </label>
+            <input
+              type="tel"
+              name=""
+              id="phonenumber"
+              pattern="[6-9]{1}[0-9]{9}"
+              maxlength="10"
+              minlength="10"
+              required
+            />
+          </div>
+          <div>
+            <label for="alternatnumber">Alternat.No: </label>
+            <input
+              type="tel"
+              name=""
+              id="alternatnumber"
+              pattern="[6-9]{1}[0-9]{9}"
+              maxlength="10"
+              minlength="10"
+              required
+            />
+          </div>
+        </div>
+        <div class="adressandpincode flex">
+          <div>
+            <label for="pincode">Pincode: </label>
+            <input
+              type="tel"
+              name=""
+              id="pincode"
+              required
+              maxlength="6"
+              minlength="6"
+            />
+          </div>
+          <div>
+            <label for="adress">Adress: </label>
+            <textarea
+              name=""
+              id="adress"
+              placeholder="Flat.No/Street..."
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="stateanddistrict flex">
+          <div>
+            <label for="state">State: </label>
+            <input type="text" name="" id="state" required />
+          </div>
+          <div>
+            <label for="district">District: </label>
+            <input type="text" id="district" required />
+          </div>
+        </div>
+        <div class="button">
+          <button class="adressbtn" disabled href="#a1">Confirm Adress</button>
+        </div>
+        <div class="error"></div>
+      </div>
+
+      <h2 class="payment_title subtitle">Payment Options</h2>
+      <div class="submain pay" id="a1">
+        <div class="payment_options">
+          <div class="payment_methods">
+            <div>
+              <input type="radio" id="option1" name="selection" />
+              <label for="option1">Paypal</label>
+            </div>
+            <div>
+              <input type="radio" id="option2" name="selection" />
+              <label for="option2">Google Pay</label>
+            </div>
+            <div>
+              <input type="radio" id="option3" name="selection" />
+              <label for="option3">Phone Pay</label>
+            </div>
+            <div>
+              <input type="radio" id="option4" name="selection" />
+              <label for="option4">Card Payment</label>
+            </div>
+            <div>
+              <input type="radio" id="option5" name="selection" />
+              <label for="option5">Cash on Delivery</label>
+            </div>
+          </div>
+
+          <div class="card_payment">
+            <h3>Credit card detail</h3>
+            <div>
+              <input
+                type="text"
+                placeholder="Credit CardNumber"
+                class="cardnumber"
+              />
+              <div class="expairy">
+                <select name="" id="month">
+                  <option value="January">January</option>
+                  <option value="Febuary">Febuary</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+                <input type="text" placeholder="year" class="expairyyear" />
+              </div>
+              <input type="text" placeholder="CVV" class="cvv" />
+            </div>
+          </div>
+        </div>
+        <button class="paymentbtn" href="a2">Payment</button>
+      </div>
+
+      <h2 class="oredr_conformation subtitle">Order Conformation</h2>
+      <div class="submain final" id="a2">
+        <div class="conforming_order">
+          <div>
+            <span
+              >If you click on the confirm then your order details will be taken
+              as confirmed</span
+            >
+            <button class="confirm">Confirm</button>
+          </div>
+          <div>
+            <span>Click on Place order to Place your order </span>
+            <button class="sucessfulbtn" disabled>Place the Order</button>
+          </div>
+        </div>
+        <div class="gobackbtn">
+          <a href="../index.html"><button><= Goto Shopping</button></a>
+          <a href="../cart/cart.html"><button><= Goto Cart</button></a>
+        </div>
+      </div>
+
+      <div class="message submain">
+        <h1>
+          Your Order is Success full <i class="fa-solid fa-thumbs-up"></i>
+        </h1>
+        <div class="gobackbtn">
+          <a href="../index.html"
+            ><button id="gotohome">Continue Shopping</button></a
+          >
+        </div>
+      </div>
+    </main>
+
+    <script src="final.js"></script>
+  </body>
+</html>

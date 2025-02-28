@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="../progressbar.css" />
+    <script
+      src="https://kit.fontawesome.com/bce308ebcd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="progress_bar">
+        <ul>
+          <li>
+            <div class="progress one">
+              <p class="numbers no-1">1</p>
+              <i class="fa-solid fa-check tick tick-1"></i>
+            </div>
+            <p class="text">Added to Cart</p>
+          </li>
+          <li>
+            <div class="progress two">
+              <p class="numbers no-2">2</p>
+              <i class="fa-solid fa-check tick tick-2"></i>
+            </div>
+            <p class="text">Order Address</p>
+          </li>
+          <li>
+            <div class="progress three">
+              <p class="numbers no-3">3</p>
+              <i class="fa-solid fa-check tick tick-3"></i>
+            </div>
+            <p class="text">Payment Details</p>
+          </li>
+          <li>
+            <div class="progress four">
+              <p class="numbers no-4">4</p>
+              <i class="fa-solid fa-check tick tick-4"></i>
+            </div>
+            <p class="text">Order Sucessful</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav">
+        <h1>Shopping Cart</h1>
+        <a href="../index.html"
+          ><button class="backtohome">Back To HomePage</button></a
+        >
+      </div>
+      <div class="search">
+        <input type="text" id="search_bar" placeholder="Search...." />
+      </div>
+      <section>
+        <div class="all-items">
+          <div class="grid">
+            <img alt="" class="itemImg" />
+            <h2 class="itemName"></h2>
+            <p class="discription"></p>
+            <p class="orginalprice"></p>
+            <div class="value">
+              <i id="minus" class="fa-solid fa-minus"></i>
+              <div class="quantity"></div>
+              <i id="plus" class="fa-solid fa-plus"></i>
+            </div>
+            <p class="price"></p>
+            <i class="fa-solid fa-trash remove_item"></i>
+          </div>
+        </div>
+        <div class="sub_total"></div>
+      </section>
+
+      <div class="last">
+        <div class="grandtotaldiv">
+          <div class="delivery_charge"></div>
+          <div class="gst"></div>
+          <div class="gradtotal">Grand Total: 5000</div>
+          <a href="../payment/final.html"
+            ><button class="checkout">Begin CheckOut</button></a
+          >
+        </div>
+      </div>
+    </main>
+
+    <script src="cart.js"></script>
+  </body>
+</html>
