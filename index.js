@@ -203,7 +203,7 @@ filtericon.addEventListener("click", () => {
 });
 
 filteroptions.addEventListener("change", (event) => {
-  let category = event.target.value;
+  let categorySelcted = event.target.value;
   let categoryitems = arr.filter((item) =>item.category === categorySelcted);
   console.log(categoryitems);
   filterfunc(categoryitems);
